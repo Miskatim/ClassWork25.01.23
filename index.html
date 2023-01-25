@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="re">
+        <div class="rer" id="terorist">
+            <div class="rer11">
+                <div class="toy">
+                    <h1 class="terer">We use cookies</h1>
+                    <button class="chrest">X</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="yu()" class="butt1">OK</button>
+                    <button class="butt2">Not OK</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+
+<style>
+    .toy    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .re {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        width: 700px;
+        height: 500px;
+    }
+    
+    .rer    {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20%; 
+        position: absolute;
+        top: -1000px;
+        background-color: whitesmoke;
+        }
+
+    .butt1  {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .butt2  {
+        font-size: 20px;
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .buttons    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25%;
+    }
+
+    .terer  {
+        display: flex;
+        margin-top: 10%;
+        font-size: 40px;
+        justify-content: normal;
+        width: 75%;
+    }
+    
+    .chrest {
+        /* position: relative;
+        top: 30%;
+        left: 75%; */
+        border: none;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    
+     #terorist   {
+        display: none;
+    } 
+</style>
+        
+    <script>
+        let buttOk = document.getElementsByClassName("butt1");
+        let firstBlanck = document.getElementById("terorist");
+        setTimeout(() => {
+            firstBlanck.style.display = "block";
+            //firstBlanck.style.transition = "2s";
+            //firstBlanck.style.transform = "translate(0px, 0)";
+        }, 1000);
+        setTimeout(() => {
+            firstBlanck.style.transition = "2s";
+            firstBlanck.style.transform = "translate(0, 1000px)";
+        }, 2000);
+        function yu()   {
+            //firstBlanck.style.display = "none";
+            firstBlanck.style.transition = "2s";
+            firstBlanck.style.transform = "translate(-5000px, 0)";
+        }
+    </script>
+</body>
+</html>
